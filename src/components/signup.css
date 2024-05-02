@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}    
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./main0.png')
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+/* .background-image{
+    object-fit: cover;
+    width: 100%;
+    height: 50%;
+} */
+  .signup{
+    width: 450px;
+    background:transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    height: 450px;
+    border-radius: 20px;
+    padding:40px 20px;
+    margin-top: 40px;
+  }
+  .signup h1{
+    font-size: 36px;
+    text-align: center;
+    color: grey;
+  }
+  .input-boxa input{
+    width: 87%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    /* margin: 10px; */
+    margin-top:60px;
+    padding-left: 20px;
+
+  }
+  .input-boxa{
+    padding-left: 30px;
+  }
+  .input-box0{
+    padding-left: 20px;
+  }
+  .input-boxb{
+    padding-left: 20px;
+  }
+  .input-boxb input{
+    width: 86%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top:20px;
+    padding-left: 20px;
+
+  }
+  .input-box0 input{
+    width: 86%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    font-size: 16px;
+    margin: 10px;
+    margin-top:20px;
+    padding-left: 20px;
+  }
+  .input-boxa input::placeholder{
+    color: gray;
+  }
+  .input-box0 input::placeholder{
+    color: gray;
+  }
+  .input-boxb input::placeholder{
+    color: gray;
+  }
+/* .abc{
+    text-align: center;
+    height: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.line{
+    width: 80%;
+    height: 1px;
+    margin-top: 20px;
+    margin-left: 50px;
+} */
+/* .btn{
+    width: 85%;
+    height: 40px;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    border-color: gainsboro;
+    margin: 20px;
+    color: gray;
+
+}
+.btn1{
+    width: 85%;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-color: gainsboro;
+    color: gray;
+    
+} */
+.submit1{
+    width: 250px;
+    margin-top: 30px;
+    height: 45px;
+    background-color: azure;
+    border: 2px solid rgb(192, 186, 186, .5);
+    border-radius: 40px;
+    margin-left: 20px;
+    font-size: 19px;
+    font-family: sans-serif;
+    color: gray;
+}
+/* .register-link{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 17px;
+    color: grey;
+} */
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  

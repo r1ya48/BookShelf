@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* display:grid; */
+    /* grid-template-columns: (1fr,1fr); */
+    background-color: #F1F7F7;
+    /* background-image:linear-gradient(#F1CBCA,#DDD3D0,#8DD7D8) ; */
+    /* background: url('./main1.png'); */
+    /* background-position:right; */
+  }
+  /* {
+    background-image:linear-gradient(#F1CBCA,#DDD3D0,#8DD7D8) ;
+  } */
+
+  .image{
+    /* margin-top: 8px; */
+    display: grid;
+    /* background:url('./main1.png'); */
+    background-size:cover;
+    height:100vh ;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-image:linear-gradient(#F1CBCA,#DDD3D0,#8DD7D8) ;
+  }
+  .wel{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color: #477575;
+    display: grid;
+    height:100vh;
+    width:100vw;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);background-image:linear-gradient(#F1CBCA,#DDD3D0,#8DD7D8) ;
+  }
+  .web{
+    margin-top: 170px;
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    margin-left: 70px;
+    /* background-image:linear-gradient(#F1CBCA,#DDD3D0,#8DD7D8) ; */
+    /* width: 50vh; */
+    /* background-color: red; */
+  }
+  .web h1{
+    margin-bottom: 20px;
+    font-size:35px;
+    margin-left: 49px;
+  }
+  .bttn{
+    margin-left: 50px;
+    margin:40px;
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color:whitesmoke;
+    background-color: #477575;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 4px 4px 4px grey;
+  }
+  .bttn:hover{
+    background-color: #81a8a8;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
