@@ -5,7 +5,9 @@ import { auth } from '../firebase'
 import { signInWithEmailAndPassword, getAuth, signInWithPopup, RecaptchaVerifier , GoogleAuthProvider, signInWithPhoneNumber  } from "firebase/auth";
 import backgroundImage from'./main0.png';
 
-const LoginForm=()=>{
+const provider = new GoogleAuthProvider();
+
+const PhoneLogIn=()=>{
     const [username, setUserName] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
@@ -54,23 +56,41 @@ const LoginForm=()=>{
             navigate('/signup');
         },1000);
     };
+
+    const goBack = () => {
+        navigate('/login')
+    }
+
+    const onLogin = (e) => {
+        console.log("Signing in: " + username + ", " + password);
+        e.preventDefault();
+        signInWithEmailAndPassword(auth, username, password)
+        .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            navigate('/welcomepg')
+            console.log(user);
+            console.log("success")
+        })
+        .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            console.log(errorCode, errorMessage)
+        });
+       
+    }
     return(
         <div className='login'>
             <h1>Login</h1>
+            {console.log("Buidling")}
             <div className='abc'>
-            <button className="btn" onClick={googleLogIn}>
-                <h3>Continue With Google</h3></button>
-            <button onClick={phoneClick} className='btn1' >
-                <h3>Continue With PhoneNo.</h3>
-            </button>
+            <button className="btn" onClick={goBack}>
+                <h3>Go Back</h3></button>
             <hr className='line'></hr>
             </div>
             <form>
                 <div className='input-box'>
-                    <input type='text' placeholder='Username*' required/>
-                </div>
-                <div className='input-box1'>
-                    <input type='password' placeholder='Password*' onChange={handlePasswordChange} required/>
+                    <input type='text' placeholder='Phone Number*' onChange={handleUsernameChange} required/>
                 </div>
                     <center><button className='submit' onClick={onLogin}>Login</button></center>
                     
@@ -82,6 +102,4 @@ const LoginForm=()=>{
     );
 };
 
-
-
-export default LoginForm;
+export default PhoneLogIn;
