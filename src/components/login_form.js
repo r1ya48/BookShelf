@@ -2,7 +2,6 @@ import React,{useState,useEffect,useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
 import './login_form.css';
 import backgroundImage from'./main0.png';
-
 const LoginForm=()=>{
     const [formData, setFormData] = useState({
         username: '',
@@ -28,6 +27,7 @@ const LoginForm=()=>{
             navigate('/signup');
         },1000);
     };
+    
     return(
         <div className='login'>
             <h1>Login</h1>
@@ -41,7 +41,7 @@ const LoginForm=()=>{
             </div>
             <form>
                 <div className='input-box'>
-                    <input type='text' placeholder='Username*' required/>
+                    <input type='email' placeholder='Email Id*' required/>
                 </div>
                 <div className='input-box1'>
                     <input type='password' placeholder='Password*' required/>
@@ -55,5 +55,7 @@ const LoginForm=()=>{
         </div>
     );
 };
+
+
 
 export default LoginForm;
