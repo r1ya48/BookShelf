@@ -24,6 +24,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import LoginForm from './components/login_form';
 import SignUp from './components/signup';
 import WelcomePage from './components/welcomepg';
+import PhoneLogIn from './components/phone_sign_in'
 // import Contact from './Contact';
 // import NotFound from './NotFound';
 
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/login" element={<LoginForm/>}/>
         <Route path="/signup" element={<SignUp/>} />
         <Route path="/welcomepg" element={<WelcomePage/>}/>
+        <Route path='/phone_sign_in' element={<PhoneLogIn/>}/>
         {/* <Route component={NotFound} /> This route will render if no other route matches */}
       </Routes>
     </Router>

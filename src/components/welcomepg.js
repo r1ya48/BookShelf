@@ -2,6 +2,9 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import backgroundImage from './main2.png';
 import './welcomepg.css';
+import { auth } from '../firebase'
+import { signOut } from 'firebase/auth';
+import { BrowserRouter as Router, Route, Routes, Navigate} from "react-router-dom";
 
 const WelcomePage = () => {
     const navigate = useNavigate();
@@ -9,6 +12,16 @@ const WelcomePage = () => {
     const handleLoginCLick = () => {
         navigate('/login');
     };
+    const logOut = () => {
+      signOut(auth).then(() => {
+        navigate('/login');
+      }).catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorCode, errorMessage)
+      });
+    }
+
   return (
     <div className='wel'>
       <div className='web'>
